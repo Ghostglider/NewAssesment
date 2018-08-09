@@ -20,7 +20,8 @@ namespace Assesment.Web.Controllers
 		[HttpGet]
 		public IHttpActionResult GetPersonneById(int Id)
 		{
-			return Ok();
+			string[] str = new string[]{ "Test", "Test2", "encore un test" };
+			return Ok(str);
 		}
 
 		[HttpPost]
