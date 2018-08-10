@@ -23,7 +23,13 @@ namespace Assesment.Web.Mapping
 
 		public Person MapingUpdatePersonVMToPerson(UpdatePersonVM UpdatePersonVM)
 		{
-			throw new NotImplementedException();
+			Person person = new Person();
+
+			person.Name = UpdatePersonVM.Name;
+			person.FirstName = UpdatePersonVM.FirstName;
+			person.Address = UpdatePersonVM.Address;
+
+			return person;
 		}
 	}
 }

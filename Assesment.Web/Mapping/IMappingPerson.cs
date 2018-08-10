@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Assesment.Web.Mapping
 {
-	interface IMappingPerson
+	public interface IMappingPerson
 	{
 		Person MapingCreatePersonVMToPerson(CreatePersonVM createPersonVM);
 

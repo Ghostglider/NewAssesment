@@ -7,10 +7,10 @@ namespace Assesment.Web.Models
 {
 	public class UpdatePersonVM
 	{
-		public string Nom { get; set; }
+		public string Name { get; set; }
 
-		public string Prenom { get; set; }
+		public string FirstName { get; set; }
 
-		public String Adresse { get; set; }
+		public String Address { get; set; }
 	}
 }

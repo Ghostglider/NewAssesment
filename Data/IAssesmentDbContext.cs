@@ -10,7 +10,7 @@ namespace Data
 {
 	public interface IAssesmentDbContext
 	{
-		DbSet<Person> Personnes { get; set; }
+		DbSet<Person> Personns { get; set; }
 
 		int SaveChanges();
 	}

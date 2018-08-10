@@ -21,7 +21,7 @@ namespace Data
 			Configuration.LazyLoadingEnabled = false;
 		}
 
-		public DbSet<Person> Personnes { get; set; }
+		public DbSet<Person> Personns { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
