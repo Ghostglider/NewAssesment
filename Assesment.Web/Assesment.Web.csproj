@@ -86,11 +86,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CommandeController.cs" />
     <Compile Include="Controllers\PersonneController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreateOrderVM.cs" />
     <Compile Include="Models\CreatePersonneVM.cs" />
+    <Compile Include="Models\UpdateOrderVM.cs" />
     <Compile Include="Models\UpdatePersonneVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
