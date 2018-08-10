@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Assesment.Web.Models
 {
-	public class UpdatePersonneVM
+	public class UpdatePersonVM
 	{
 		public string Nom { get; set; }
 

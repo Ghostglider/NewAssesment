@@ -25,13 +25,13 @@ namespace Assesment.Web.Controllers
 		}
 
 		[HttpPost]
-		public IHttpActionResult CreatePersonne([FromBody] CreatePersonneVM createPersonne)
+		public IHttpActionResult CreatePersonne([FromBody] CreatePersonVM createPersonne)
 		{
 			return Ok(createPersonne);
 		}
 
 		[HttpPut]
-		public IHttpActionResult UpdatePersonne(int Id, [FromBody] UpdatePersonneVM updatePersonne)
+		public IHttpActionResult UpdatePersonne(int Id, [FromBody] UpdatePersonVM updatePersonne)
 		{
 
 			return Ok(updatePersonne);

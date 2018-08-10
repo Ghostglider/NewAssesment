@@ -1,4 +1,5 @@
 ﻿using Data.Models;
+using Data.TypeConfiguration;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
