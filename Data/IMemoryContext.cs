@@ -1,17 +1,15 @@
 ﻿using Data.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Data
 {
-	public interface IAssesmentDbContext
+	public interface IMemoryContext
 	{
-		DbSet<Person> Persons { get; set; }
-
-		int SaveChanges();
+		List<Person> GetPersons();
+		void SetPersons(List<Person> value);
 	}
 }
