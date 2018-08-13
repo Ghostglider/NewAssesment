@@ -8,24 +8,24 @@ using System.Web.Http;
 
 namespace Assesment.Web.Controllers
 {
-    public class CommandeController : ApiController
+    public class OrderController : ApiController
     {
 		[HttpGet]
-		public IHttpActionResult GetCommandeById(int id)
+		public IHttpActionResult GetOrderById(int id)
 		{
 			return Ok();
 		}
 
 		[HttpGet]
-		[Route("api/commande/personne/{personneId:int}")]
-		public IHttpActionResult GetCommandeByPersonneId(int personneId)
+		[Route("api/order/person/{personId:int}")]
+		public IHttpActionResult GetOrderByPersonneId(int personId)
 		{
 			return Ok();
 		}
 
 		[HttpGet]
-		[Route("api/commande/{id:int}/personne/{personneId:int}")]
-		public IHttpActionResult GetCommandeByPersonneId(int id, int personneId)
+		[Route("api/Order/{id:int}/person/{personId:int}")]
+		public IHttpActionResult GetOneOrderByPersonneId(int id, int personId)
 		{
 			return Ok();
 		}
