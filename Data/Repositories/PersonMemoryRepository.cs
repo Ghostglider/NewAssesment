@@ -18,7 +18,7 @@ namespace Data.Repositories
 
 		public int CreatePerson(Person person)
 		{
-			person.Id = _context.GetPersons().Count == null ? 1 : _context.GetPersons().Max(p => p.Id) + 1;
+			person.Id = _context.GetPersons().Count == 0 ? 1 : _context.GetPersons().Max(p => p.Id) + 1;
 			_context.GetPersons().Add(person);
 
 			return person.Id;
@@ -26,7 +26,9 @@ namespace Data.Repositories
 
 		public void DeletePerson(int id)
 		{
-			throw new NotImplementedException();
+			Person tempPerson = _context.GetPersons().FirstOrDefault(p => p.Id == id);
+
+			_context.GetPersons().Remove(tempPerson);
 		}
 
 		public IEnumerable<Person> GetAllPerson()
@@ -36,12 +38,17 @@ namespace Data.Repositories
 
 		public Person GetPersonById(int id)
 		{
-			throw new NotImplementedException();
+			Person result = _context.GetPersons().FirstOrDefault(p => p.Id == id);
+			return result;
 		}
 
 		public void UpdatePerson(int id, Person person)
 		{
-			throw new NotImplementedException();
+			int tempindex = _context.GetPersons().FindIndex(p => p.Id == id);
+			_context.GetPersons()[tempindex].Name = person.Name;
+			_context.GetPersons()[tempindex].FirstName = person.FirstName;
+			_context.GetPersons()[tempindex].Address = person.Address;
+			
 		}
 	}
 }
