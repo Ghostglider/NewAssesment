@@ -13,16 +13,13 @@ namespace Data
 		{
 		}
 
-		public static List<Person> Persons = new List<Person>();
+		public static List<Person> Person = new List<Person>();
 
-		public List<Person> GetPersons()
+		public List<Person> Persons()
 		{
-			return Persons;
+			return Person;
 		}
 
-		public void SetPersons(List<Person> value)
-		{
-			Persons = value;
-		}
+		
 	}
 }
