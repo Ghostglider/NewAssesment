@@ -9,7 +9,7 @@ namespace Data
 {
 	public interface IMemoryContext
 	{
-		List<Person> GetPersons();
-		void SetPersons(List<Person> value);
+		List<Person> Persons();
+		
 	}
 }
