@@ -13,8 +13,8 @@ namespace Assesment.Web
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
-			//SimpleInjectorConfig.UseContainer(GlobalConfiguration.Configuration);
-			SimpleInjectorMemoryConfig.UseContainer(GlobalConfiguration.Configuration);
+			SimpleInjectorConfig.UseContainer(GlobalConfiguration.Configuration);
+			//SimpleInjectorMemoryConfig.UseContainer(GlobalConfiguration.Configuration);
 		}
     }
 }

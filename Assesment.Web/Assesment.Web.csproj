@@ -100,16 +100,13 @@
     <Compile Include="App_Start\SimpleInjectorConfig.cs" />
     <Compile Include="App_Start\SimpleInjectorMemoryConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\CommandeController.cs" />
     <Compile Include="Controllers\PersonneController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Mapping\IMappingPerson.cs" />
     <Compile Include="Mapping\MappingPerson.cs" />
-    <Compile Include="Models\CreateOrderVM.cs" />
     <Compile Include="Models\CreatePersonVM.cs" />
-    <Compile Include="Models\UpdateOrderVM.cs" />
     <Compile Include="Models\UpdatePersonVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
