@@ -1,0 +1,25 @@
+﻿using Data.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data
+{
+	public interface IMemoryContext
+	{
+<<<<<<< Updated upstream
+		List<Person> Persons();
+		
+=======
+		List<Person> GetPersons();
+		List<Order> GetOrders();
+		void SetPersons(List<Person> value);
+
+		//void SetOrder(List<Order> value);
+
+
+>>>>>>> Stashed changes
+	}
+}

@@ -1,0 +1,47 @@
+﻿using Data.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data
+{
+	public class MemoryContext : IMemoryContext
+	{
+		public MemoryContext()
+		{
+		}
+
+<<<<<<< Updated upstream
+		public static List<Person> Person = new List<Person>();
+=======
+		public static List<Person> Persons = new List<Person>();
+		public static List<Order> Orders = new List<Order>();
+>>>>>>> Stashed changes
+
+		public List<Person> Persons()
+		{
+			return Person;
+		}
+
+<<<<<<< Updated upstream
+		
+=======
+		public void SetPersons(List<Person> value)
+		{
+			Persons = value;
+		}
+
+		public List<Order> GetOrders()
+		{
+			return Orders;
+		}
+
+		//public void SetOrder(List<Order> value)
+		//{
+		//	Orders = value;
+		//}
+>>>>>>> Stashed changes
+	}
+}
